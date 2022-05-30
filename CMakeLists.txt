@@ -7,3 +7,5 @@ include(cmake/LinkerOptions.cmake REQUIRED)
 include(cmake/InstallOptions.cmake REQUIRED)
 include(cmake/OutputFiles.cmake REQUIRED)
 include(cmake/PrintInfo.cmake REQUIRED)
+
+add_subdirectory(python)

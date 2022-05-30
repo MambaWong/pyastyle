@@ -7,3 +7,13 @@ The file **astyle.html**' contains information on using Artistic Style.
 
 The files **news.html** and **notes.html** contain information on changes
 made to the various releases.
+
+---
+
+# Building
+
+```
+cmake -S. -Bbuild
+cmake --build build
+```
+

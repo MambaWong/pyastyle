@@ -2,7 +2,7 @@
 if(APPLE)
     target_compile_options( astyle PRIVATE -W -Wall -fno-rtti -fno-exceptions -std=c++11 -stdlib=libc++)
 elseif(NOT WIN32)   # Linux
-    target_compile_options(astyle PRIVATE -Wall -Wextra -fno-rtti -fno-exceptions -std=c++11)
+    target_compile_options(astyle PRIVATE -fPIC -Wall -Wextra -fno-rtti -fno-exceptions -std=c++11)
     if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "gnu")
         execute_process(COMMAND ${CMAKE_CXX_COMPILER} -dumpversion OUTPUT_VARIABLE GCC_VERSION)
         if (NOT (GCC_VERSION VERSION_GREATER 4.6 OR GCC_VERSION VERSION_EQUAL 4.6))

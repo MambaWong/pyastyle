@@ -1,7 +1,7 @@
 # Build Options - executable by default, libraries on request
 option(BUILD_JAVA_LIBS   "Build java library"   OFF)
 option(BUILD_SHARED_LIBS "Build shared library" OFF)
-option(BUILD_STATIC_LIBS "Build static library" OFF)
+option(BUILD_STATIC_LIBS "Build static library" ON)
 
 # Release Build by default (except for Borland)
 if(NOT CMAKE_BUILD_TYPE)
